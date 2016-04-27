@@ -1,0 +1,22 @@
+<h1>Grammar checker</h1>
+<p>This grammar checker checks if the input belongs to formal grammar, based on language:<br>
+      <span class="label label-default">
+        L(G)={ l+l-l | l ∈ {a, b}⁺ }
+      </span>
+<form role="form">
+  <div class="form-group">
+    <input type="text" [(ngModel)]="validationInput" placeholder="Enter the input to validate" class="form-control">
+  </div>
+  <div id="lab1-result" class="form-group">
+    <div [class.hidden]="!validateInput()" class="alert alert-success" role="alert">
+      <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+      <span class="sr-only">Success:</span>
+      Input is valid
+    </div>
+    <div [class.hidden]="validateInput()" class="alert alert-danger" role="alert">
+      <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+      <span class="sr-only">Error:</span>
+      Input is invalid
+    </div>
+  </div>
+</form>

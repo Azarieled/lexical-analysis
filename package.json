@@ -1,0 +1,42 @@
+{
+  "name": "lexical-analysis",
+  "version": "1.0.0",
+  "description": "Lexical Analysis university home assignment",
+  "keywords": [
+    "lexical",
+    "analysis"
+  ],
+  "license": "GPL-3.0",
+  "author": "Ruslan Gunawardana",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Azarieled/lexical-analysis.git"
+  },
+  "scripts": {
+    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" \"gulp\"",
+    "lite": "lite-server",
+    "postinstall": "typings install",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings"
+  },
+  "dependencies": {
+    "angular2": "^2.0.0-beta.16",
+    "bootstrap": "^3.3.6",
+    "es6-shim": "^0.35.0",
+    "jquery": "^2.2.3",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.2",
+    "systemjs": "0.19.26",
+    "zone.js": "0.6.12"
+  },
+  "devDependencies": {
+    "concurrently": "^2.0.0",
+    "gulp": "^3.9.1",
+    "gulp-stylus": "^2.3.1",
+    "gulp-watch": "^4.3.5",
+    "lite-server": "^2.2.0",
+    "typescript": "^1.8.10",
+    "typings": "^0.8.1"
+  }
+}
