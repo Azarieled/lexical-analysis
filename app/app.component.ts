@@ -1,5 +1,5 @@
-import { Component } from 'angular2/core';
-import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
+import { Component } from '@angular/core';
+import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router-deprecated';
 import {Lab1Component} from "./labs/lab1.component";
 import {Lab2Component} from "./labs/lab2.component";
 import {Lab3Component} from "./labs/lab3.component";
