@@ -8,7 +8,7 @@ export class Lab2Component {
   compilerInput = 'i = 1 + 1';
 
   compilerOutput() {
-    return this.compilerInput;
+    return this.tokenize(this.compilerInput);
   }
 
   private tokenize(str) {
@@ -18,7 +18,7 @@ export class Lab2Component {
     function isNextCharInToken(partialToken, c) {
       if (/\s/.test(c)) {
         return false;
-      } else if (!isNaN(partialToken)) {
+      } else if (!(partialToken === '') && !isNaN(partialToken)) {
         return !isNaN(partialToken + c);
       } else if (partialToken[0] === '"' && partialToken[partialToken.length - 1] === '"') {
         return partialToken[partialToken.length - 2] !== '\\';
